@@ -2,7 +2,12 @@
 import { useState,useEffect } from 'react';
 import './App.css';
 import './components/style.css';
-import { AiFillCheckCircle } from "react-icons/ai";
+import { AiFillCheckCircle ,AiFillFire} from "react-icons/ai";
+import { FcOk,FcLibrary,FcComboChart,FcAndroidOs,FcCamcorderPro} from "react-icons/fc";
+import { FaGem ,FaDirections} from "react-icons/fa";
+import { GiByzantinTemple,GiVolcano,GiTigerHead } from "react-icons/gi";
+import { ImDatabase } from "react-icons/im";
+
 
 
 function App() {
@@ -94,16 +99,17 @@ function Nav(){
   return(
     <>
       <div className='bg-light shadow-sm container'>
-         
-          <h5 className='headings'>
-            Live Space
+      
+       <h5 className='headings'><ul>
+      
+       <ImDatabase/>  Live Space</ul>
           </h5>
-          <ul> <AiFillCheckCircle></AiFillCheckCircle> All NFTs on cyber either belong to or were minted bytheir space creator.</ul>
-
+          <ul > <FcOk></FcOk> All NFTs on cyber either belong to or were minted bytheir space creator.</ul>
+          
           <div className='container-fluid'>
 
             <div className='row tab-button justify-content-center'>
-              <div className='col-auto'>
+              <div className='col-auto ai'>
                 <button className='active' onClick={()=>{
     setfirst(true);
     setsec(false);
@@ -112,7 +118,7 @@ function Nav(){
     setfift(false);
     setsix(false);
     setsev(false);
-    }} > first</button>
+    }} ><AiFillFire></AiFillFire> 24h Trending</button>
               </div>
               <div className='col-auto' ><button onClick={()=>{
  setfirst(false);
@@ -123,7 +129,7 @@ function Nav(){
  setsix(false);
  setsev(false);
 
-              }} > second</button></div>
+              }} ><FcCamcorderPro/> Latest Shows</button></div>
               <div className='col-auto'><button onClick={()=>{
                  setfirst(false);
                  setsec(false);
@@ -132,7 +138,7 @@ function Nav(){
                  setfift(false);
                  setsix(false);
                  setsev(false);
-              }} className='active'> thirs</button></div>
+              }} className='active'><FcComboChart/> Most Popular</button></div>
               <div className='col-auto'><button onClick={()=>{
                   setfirst(false);
                  setsec(false);
@@ -141,7 +147,7 @@ function Nav(){
                  setfift(false);
                  setsix(false);
                  setsev(false);
-                }} className='active'> sandesh</button></div>
+                }} className='active'><FaGem></FaGem> In Genesis</button></div>
               <div className='col-auto' ><button onClick={()=>{
                 setfirst(false);
                 setsec(false);
@@ -150,23 +156,23 @@ function Nav(){
                 setfift(true);
                 setsix(false);
                 setsev(false);
-              }} className='active'> sandesh</button></div>
+              }} className='active'><FcLibrary/> In Temple</button></div>
               <div className='col-auto' ><button onClick={()=>{setfirst(false);
                  setsec(false);
                  setthir(false);
                  setfou(false);
                  setfift(false);
                  setsix(true);
-                 setsev(false);}} className='active'> sandesh</button></div>
+                 setsev(false);}} className='active'><GiVolcano/> In Void</button></div>
               <div className='col-auto'><button onClick={()=>{
                 setfirst(false);
                 setsec(false);
-                setthir(false);
+                setthir(false); 
                 setfou(false);
                 setfift(false);
                 setsix(false);
                 setsev(true);
-              }} className='active'> sandesh</button></div>
+              }} className='active'><GiTigerHead/> #BAYC</button></div>
             </div>
 
             <div className='containts'>
@@ -174,59 +180,64 @@ function Nav(){
                       { first? <>
                       <div className='col-sm-4 col-12'>
                         <a href='https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLso2MGD0Ys3MS8lMBAApGQTT&q=india&rlz=1C1CHBF_enIN975IN975&oq=india&aqs=chrome.1.69i57j46i67i433j35i39l2j0i67i433j69i60l3.5592j0j7&sourceid=chrome&ie=UTF-8'>
-                                    <div class="card">
+                                    <div className="card">
                                 
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
                                     </div></a>
                           </div>  
                           <div className='col-sm-4 col-12'>
-                                    <div class="card">
-                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                           <div className='col-sm-4 col-12'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                           <div className='col-sm-4 col-12'>
-                                    <div class="card">
-                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                           <div className='col-sm-4 col-12'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                           <div className='col-sm-4 col-12'>
-                                    <div class="card">
-                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                       
                             
@@ -237,14 +248,22 @@ function Nav(){
                       }
 
                     { second? <>
-                      <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          </div>
-                                    </div>
+                      <div className='col-sm-4 col-12'>
+                      <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                         
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Taj+Mahal,+Dharmapuri,+Forest+Colony,+Tajganj,+Agra,+Uttar+Pradesh/@27.1751405,78.0071226,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39747121d702ff6d:0xdd2ae4803f767dde!2m2!1d78.0421422!2d27.1751448';
+                                            }}
+                                      > Direction <FaDirections/></button> </div>
+                                    </div></a>
                           </div>  
                                   
                             </> : 
@@ -254,16 +273,111 @@ function Nav(){
                             }
 
                     { third? <>
-                      <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          </div>
-                                    </div>
+                      <div className='col-sm-4 col-12'>
+                      <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mumbai.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">The Gateway of India</h5>
+                                            <p className="card-text">@S4nCsCKC</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Gateway+Of+India+Mumbai,+Apollo+Bandar,+Colaba,+Mumbai,+Maharashtra/@18.9219808,72.7996347,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7d1c73a0d5cad:0xc70a25a7209c733c!2m2!1d72.8346543!2d18.9219841';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                       </div>
+                                    </div></a>
                           </div>  
-                                  
+                          <div className='col-sm-4 col-12'>
+                        <a href='https://www.google.com/search?gs_ssp=eJzj4tDP1TcwLso2MGD0Ys3MS8lMBAApGQTT&q=india&rlz=1C1CHBF_enIN975IN975&oq=india&aqs=chrome.1.69i57j46i67i433j35i39l2j0i67i433j69i60l3.5592j0j7&sourceid=chrome&ie=UTF-8'>
+                                    <div className="card">
+                                
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-rajasthan.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Gadi Sagar Temple in Rajasthan</h5>
+                                            <p className="card-text">@0n0CfSg</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Rajasthan/@27.0237993,74.182913,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x396a3efaf7e30e37:0xb52b9b4506c088e5!2m2!1d74.2179326!2d27.0238036';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                       </div>
+                                    </div></a>
+                          </div>  
+                          <div className='col-sm-4 col-12'>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-amritsar.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">The Golden Temple in Amritsar</h5>
+                                            <p className="card-text">@8nsbva0x0</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Golden+Temple+Amritsar,+Golden+Temple,+Golden+Temple+Road,+Atta+Mandi,+Katra+Ahluwalia,+Amritsar,+Punjab/@31.620669,74.8407286,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x391963542e500067:0x71c08fc9c49abfb!2m2!1d74.8757482!2d31.6206738';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                       </div>
+                                    </div></a>
+                          </div>  
+                          <div className='col-sm-4 col-12'>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-goa.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Palolem Beach, South Goa</h5>
+                                            <p className="card-text">@0aXn0aS</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Palolem+beach,+Ourem+Road,+Mohanbagh,+Palolem,+Canacona,+South+Goa,+Goa/@15.0092269,73.9937454,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bbe4508a74e02cf:0x3fa8ac67386e086!2m2!1d74.028765!2d15.0092296';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                       </div>
+                                    </div></a>
+                          </div>  
+                          <div className='col-sm-4 col-12'>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+                                    <div className="card">
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-shimla.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Shimla</h5>
+                                            <p className="card-text">@0aS0cZx0</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Shimla,+Himachal+Pradesh/@31.1048098,77.1383837,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390578e3e35d6e67:0x1f7e7ff6ff9f54b7!2m2!1d77.1734033!2d31.1048145';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                       </div>
+                                    </div></a>
+                          </div>  
+                          <div className='col-sm-4 col-12'>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+
+                                    <div className="card">
+                                          <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Taj Mahal</h5>
+                                            <p className="card-text">@0x0sjd0x</p>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Taj+Mahal,+Dharmapuri,+Forest+Colony,+Tajganj,+Agra,+Uttar+Pradesh/@27.1751405,78.0071226,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39747121d702ff6d:0xdd2ae4803f767dde!2m2!1d78.0421422!2d27.1751448';
+                                            }}
+                                      > Direction <FaDirections/></button>
+                                          </div>
+                                    </div></a>
+                          </div>  
+                                                           
                             </> : 
                             <>
                             </>
@@ -272,14 +386,16 @@ function Nav(){
 
 
                     { fourth? <>
-                      <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div className='col-sm-4 col-12'>
+                                              <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                             </> : 
                             <>
@@ -289,14 +405,16 @@ function Nav(){
 
 
                         { fifth? <>
-                          <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div className='col-sm-4 col-12'>
+                          <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                                 </> : 
                                 <>
@@ -306,14 +424,16 @@ function Nav(){
 
 
                                   { sixth? <>
-                                    <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div className='col-sm-4 col-12'>
+                                    <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                                           </> : 
                                           <>
@@ -323,14 +443,22 @@ function Nav(){
 
 
                   {seventh? <>
-                    <div className='col-4'>
-                                    <div class="card">
-                                          <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FydG9vbnN8ZW58MHx8MHx8&w=1000&q=80" class="card-img-top" alt="..."/>
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div className='col-sm-4 col-12'>
+                    <a href='https://simple.wikipedia.org/wiki/Taj_Mahal'>
+
+                                    <div className="card">
+                                          <img src="https://m.media-amazon.com/images/I/71hMEM1a9EL._SL1500_.jpg" className="card-img-top" alt="..."/>
+                                          <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <button className='bg-primary'
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://www.google.com/maps/dir//Taj+Mahal,+Dharmapuri,+Forest+Colony,+Tajganj,+Agra,+Uttar+Pradesh/@27.1751405,78.0071226,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39747121d702ff6d:0xdd2ae4803f767dde!2m2!1d78.0421422!2d27.1751448';
+                                            }}
+                                      > Direction <FaDirections/></button>
                                           </div>
-                                    </div>
+                                    </div></a>
                           </div>  
                           </> : 
                           <>
