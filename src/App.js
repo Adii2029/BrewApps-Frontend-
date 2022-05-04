@@ -1,11 +1,11 @@
 
-import { useState,useEffect } from 'react';
+import { useState, } from 'react';
 import './App.css';
 import './components/style.css';
-import { AiFillCheckCircle ,AiFillFire} from "react-icons/ai";
-import { FcOk,FcLibrary,FcComboChart,FcAndroidOs,FcCamcorderPro} from "react-icons/fc";
+import {  AiFillFire} from "react-icons/ai";
+import { FcOk,FcLibrary,FcComboChart,FcCamcorderPro} from "react-icons/fc";
 import { FaGem ,FaDirections} from "react-icons/fa";
-import { GiByzantinTemple,GiVolcano,GiTigerHead } from "react-icons/gi";
+import { GiVolcano,GiTigerHead } from "react-icons/gi";
 import { ImDatabase } from "react-icons/im";
 
 
@@ -22,7 +22,7 @@ function App() {
 
 
 function Nav(){
-  const [datas,setdatas] = useState("first");
+  
   const [first,setfirst] = useState(true);
   const [second,setsec] = useState(false);
   const [third,setthir] = useState(false);
