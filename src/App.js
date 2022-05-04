@@ -102,7 +102,7 @@ function Nav(){
       
        <h5 className='headings'><ul>
       
-       <ImDatabase/>  Live Space</ul>
+       <ImDatabase/>  Live Spaces</ul>
           </h5>
           <ul > <FcOk></FcOk> All NFTs on cyber either belong to or were minted bytheir space creator.</ul>
           
